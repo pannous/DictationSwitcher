@@ -296,7 +296,21 @@ NSString *const kPreferenceKeyShortcutEnabled = @"hotKeyEnabled";
 //    }];
     
 //    - (id)remoteObjectProxyWithErrorHandler:(void (^)(NSError *error))handler;
-    [proxy RefreshLanguage];
+    @try {
+        [proxy upperCaseString:@"hh" withReply:^(NSString *reply) {
+            NSLog(@"YAAAAY");
+            NSLog(reply);
+        }];
+        [proxy RefreshLanguage];
+//        int ok=[proxy RefreshLanguage];
+//        if(ok!=333)
+//            return false;
+    }
+    @catch (NSException *exception) {
+        NSLog([exception description]);
+        NSLog([exception reason]);
+        return false;
+    }
     return true;
 }
 

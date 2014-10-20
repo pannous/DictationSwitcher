@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 45;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -68,7 +68,6 @@
 		8C288A8319F5A5C10002B1CD /* DictationLanguageRefresher.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C288A8219F5A5C10002B1CD /* DictationLanguageRefresher.m */; };
 		8C288A8519F5A5C10002B1CD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C288A8419F5A5C10002B1CD /* main.m */; };
 		8C288A8819F5A5C10002B1CD /* DictationLanguageRefresher.xpc in Embed XPC Services */ = {isa = PBXBuildFile; fileRef = 8C288A7C19F5A5C10002B1CD /* DictationLanguageRefresher.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		8C288A9119F5A76D0002B1CD /* DictationSwitcherXPC.c in Sources */ = {isa = PBXBuildFile; fileRef = 8C288A8F19F5A76D0002B1CD /* DictationSwitcherXPC.c */; };
 		8C9F17D515DF881C00ED04E6 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C9F17D415DF881C00ED04E6 /* Carbon.framework */; };
 /* End PBXBuildFile section */
 
@@ -180,8 +179,6 @@
 		8C288A8119F5A5C10002B1CD /* DictationLanguageRefresher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DictationLanguageRefresher.h; sourceTree = "<group>"; };
 		8C288A8219F5A5C10002B1CD /* DictationLanguageRefresher.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DictationLanguageRefresher.m; sourceTree = "<group>"; };
 		8C288A8419F5A5C10002B1CD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		8C288A8F19F5A76D0002B1CD /* DictationSwitcherXPC.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DictationSwitcherXPC.c; sourceTree = "<group>"; };
-		8C288A9019F5A76D0002B1CD /* DictationSwitcherXPC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DictationSwitcherXPC.h; sourceTree = "<group>"; };
 		8C288A9219F5AFE20002B1CD /* DictationLanguageRefresher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = DictationLanguageRefresher.entitlements; sourceTree = "<group>"; };
 		8C9F17D415DF881C00ED04E6 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
 		8CBF9EF31988F07400C9049A /* DictationSwitcher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = DictationSwitcher.entitlements; sourceTree = "<group>"; };
@@ -258,8 +255,6 @@
 				116E871115C44B090090D303 /* DictationSwitcherAppDelegate.m */,
 				116E871315C44B090090D303 /* MainMenu.xib */,
 				116E870515C44B090090D303 /* Supporting Files */,
-				8C288A8F19F5A76D0002B1CD /* DictationSwitcherXPC.c */,
-				8C288A9019F5A76D0002B1CD /* DictationSwitcherXPC.h */,
 			);
 			path = DictationSwitcher;
 			sourceTree = "<group>";
@@ -416,7 +411,7 @@
 			attributes = {
 				CLASSPREFIX = DictationSwitcher;
 				LastUpgradeCheck = 0510;
-				ORGANIZATIONNAME = "René Fouquet";
+				ORGANIZATIONNAME = Pannous;
 				TargetAttributes = {
 					116E86F915C44B090090D303 = {
 						DevelopmentTeam = B325LM52BE;
@@ -436,12 +431,15 @@
 							com.apple.ApplicationGroups.Mac = {
 								enabled = 1;
 							};
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
 						};
 					};
 				};
 			};
 			buildConfigurationList = 116E86F415C44B090090D303 /* Build configuration list for PBXProject "Dictation Language Switcher" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 3.1";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -544,7 +542,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C288A9119F5A76D0002B1CD /* DictationSwitcherXPC.c in Sources */,
 				8C288A8519F5A5C10002B1CD /* main.m in Sources */,
 				8C288A8319F5A5C10002B1CD /* DictationLanguageRefresher.m in Sources */,
 			);
@@ -698,10 +695,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				INFOPLIST_FILE = DictationLanguageRefresher/Info.plist;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
+				SKIP_INSTALL = NO;
 			};
 			name = Debug;
 		};
@@ -728,10 +725,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				INFOPLIST_FILE = DictationLanguageRefresher/Info.plist;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
+				SKIP_INSTALL = NO;
 			};
 			name = Release;
 		};
@@ -763,6 +760,7 @@
 				8C288A8D19F5A5C10002B1CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
