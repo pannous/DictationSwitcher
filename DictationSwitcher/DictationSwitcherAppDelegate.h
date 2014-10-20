@@ -35,6 +35,7 @@
 
 @property (strong) IBOutlet NSMenu *dictationSwitcherMenu;
 @property (strong) NSWindowController *preferencesWindow;
+@property (strong) NSString *language;
 @property (nonatomic, weak) IBOutlet MASShortcutView *shortcutView;
 @property (nonatomic, getter = isShortcutEnabled) BOOL shortcutEnabled;
 

@@ -29,6 +29,7 @@
 @synthesize shortcutPlaceholder = _shortcutPlaceholder;
 @synthesize shortcutValueChange = _shortcutValueChange;
 @synthesize recording = _recording;
+@synthesize appearance = _appearance;
 
 #pragma mark -
 
@@ -374,7 +375,8 @@ void *kUserDataHint = &kUserDataHint;
                             [weakSelf activateEventMonitoring:NO];
                             NSString *format = NSLocalizedString(@"The key combination %@ cannot be used",
                                                                  @"Title for alert when shortcut is already used");
-                            NSRunCriticalAlertPanel([NSString stringWithFormat:format, shortcut], error.localizedDescription,
+                            NSRunCriticalAlertPanel([NSString stringWithFormat:format, shortcut],
+                                                    error.localizedDescription,
                                                     NSLocalizedString(@"OK", @"Alert button when shortcut is already used"),
                                                     nil, nil);
                             weakSelf.shortcutPlaceholder = nil;

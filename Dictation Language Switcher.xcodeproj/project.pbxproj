@@ -65,19 +65,54 @@
 		11F88B0915C688EC00EC051B /* DictationSwitcher.iconset in Resources */ = {isa = PBXBuildFile; fileRef = 11F88B0815C688EC00EC051B /* DictationSwitcher.iconset */; };
 		75AC28F215CF0045004A67DD /* en-GB.png in Resources */ = {isa = PBXBuildFile; fileRef = 75AC28F015CF0045004A67DD /* en-GB.png */; };
 		75AC28F315CF0045004A67DD /* en-GB@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 75AC28F115CF0045004A67DD /* en-GB@2x.png */; };
+		8C288A8319F5A5C10002B1CD /* DictationLanguageRefresher.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C288A8219F5A5C10002B1CD /* DictationLanguageRefresher.m */; };
+		8C288A8519F5A5C10002B1CD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C288A8419F5A5C10002B1CD /* main.m */; };
+		8C288A8819F5A5C10002B1CD /* DictationLanguageRefresher.xpc in Embed XPC Services */ = {isa = PBXBuildFile; fileRef = 8C288A7C19F5A5C10002B1CD /* DictationLanguageRefresher.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8C288A9119F5A76D0002B1CD /* DictationSwitcherXPC.c in Sources */ = {isa = PBXBuildFile; fileRef = 8C288A8F19F5A76D0002B1CD /* DictationSwitcherXPC.c */; };
 		8C9F17D515DF881C00ED04E6 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C9F17D415DF881C00ED04E6 /* Carbon.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		8C288A8619F5A5C10002B1CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 116E86F115C44B090090D303 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C288A7B19F5A5C10002B1CD;
+			remoteInfo = DictationLanguageRefresher;
+		};
+		8C288A8919F5A5C10002B1CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 116E86F115C44B090090D303 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C288A7B19F5A5C10002B1CD;
+			remoteInfo = DictationLanguageRefresher;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8C288A8E19F5A5C10002B1CD /* Embed XPC Services */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/XPCServices";
+			dstSubfolderSpec = 16;
+			files = (
+				8C288A8819F5A5C10002B1CD /* DictationLanguageRefresher.xpc in Embed XPC Services */,
+			);
+			name = "Embed XPC Services";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		116E86FA15C44B090090D303 /* DictationSwitcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DictationSwitcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		116E86FA15C44B090090D303 /* Dictation Language Switcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dictation Language Switcher.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		116E86FE15C44B090090D303 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		116E870115C44B090090D303 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		116E870215C44B090090D303 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		116E870315C44B090090D303 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		116E870615C44B090090D303 /* DictationSwitcher-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DictationSwitcher-Info.plist"; sourceTree = "<group>"; };
+		116E870615C44B090090D303 /* Dictation Language Switcher-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Dictation Language Switcher-Info.plist"; sourceTree = "<group>"; };
 		116E870815C44B090090D303 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		116E870A15C44B090090D303 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		116E870C15C44B090090D303 /* DictationSwitcher-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DictationSwitcher-Prefix.pch"; sourceTree = "<group>"; };
+		116E870C15C44B090090D303 /* Dictation Language Switcher-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Dictation Language Switcher-Prefix.pch"; sourceTree = "<group>"; };
 		116E870E15C44B090090D303 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		116E871015C44B090090D303 /* DictationSwitcherAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = DictationSwitcherAppDelegate.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		116E871115C44B090090D303 /* DictationSwitcherAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = DictationSwitcherAppDelegate.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
@@ -139,7 +174,18 @@
 		11F88B0815C688EC00EC051B /* DictationSwitcher.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = DictationSwitcher.iconset; sourceTree = "<group>"; };
 		75AC28F015CF0045004A67DD /* en-GB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "en-GB.png"; path = "DictationSwitcher/en-GB.png"; sourceTree = "<group>"; };
 		75AC28F115CF0045004A67DD /* en-GB@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "en-GB@2x.png"; path = "DictationSwitcher/en-GB@2x.png"; sourceTree = "<group>"; };
+		8C288A7C19F5A5C10002B1CD /* DictationLanguageRefresher.xpc */ = {isa = PBXFileReference; explicitFileType = "wrapper.xpc-service"; includeInIndex = 0; path = DictationLanguageRefresher.xpc; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C288A7F19F5A5C10002B1CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C288A8019F5A5C10002B1CD /* DictationLanguageRefresherProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DictationLanguageRefresherProtocol.h; sourceTree = "<group>"; };
+		8C288A8119F5A5C10002B1CD /* DictationLanguageRefresher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DictationLanguageRefresher.h; sourceTree = "<group>"; };
+		8C288A8219F5A5C10002B1CD /* DictationLanguageRefresher.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DictationLanguageRefresher.m; sourceTree = "<group>"; };
+		8C288A8419F5A5C10002B1CD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8C288A8F19F5A76D0002B1CD /* DictationSwitcherXPC.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DictationSwitcherXPC.c; sourceTree = "<group>"; };
+		8C288A9019F5A76D0002B1CD /* DictationSwitcherXPC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DictationSwitcherXPC.h; sourceTree = "<group>"; };
+		8C288A9219F5AFE20002B1CD /* DictationLanguageRefresher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = DictationLanguageRefresher.entitlements; sourceTree = "<group>"; };
 		8C9F17D415DF881C00ED04E6 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		8CBF9EF31988F07400C9049A /* DictationSwitcher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = DictationSwitcher.entitlements; sourceTree = "<group>"; };
+		8CE3058719F1984E008906BB /* Dictation Language Switcher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Dictation Language Switcher.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,15 +198,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8C288A7919F5A5C10002B1CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		116E86EF15C44B090090D303 = {
 			isa = PBXGroup;
 			children = (
+				8CE3058719F1984E008906BB /* Dictation Language Switcher.entitlements */,
 				11BB1D9516122A980020800D /* MASShortcut */,
 				11F88B0A15C6892700EC051B /* Resources */,
 				116E870415C44B090090D303 /* DictationSwitcher */,
+				8C288A7D19F5A5C10002B1CD /* DictationLanguageRefresher */,
 				116E86FD15C44B090090D303 /* Frameworks */,
 				116E86FB15C44B090090D303 /* Products */,
 			);
@@ -169,7 +224,8 @@
 		116E86FB15C44B090090D303 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				116E86FA15C44B090090D303 /* DictationSwitcher.app */,
+				116E86FA15C44B090090D303 /* Dictation Language Switcher.app */,
+				8C288A7C19F5A5C10002B1CD /* DictationLanguageRefresher.xpc */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -197,10 +253,13 @@
 		116E870415C44B090090D303 /* DictationSwitcher */ = {
 			isa = PBXGroup;
 			children = (
+				8CBF9EF31988F07400C9049A /* DictationSwitcher.entitlements */,
 				116E871015C44B090090D303 /* DictationSwitcherAppDelegate.h */,
 				116E871115C44B090090D303 /* DictationSwitcherAppDelegate.m */,
 				116E871315C44B090090D303 /* MainMenu.xib */,
 				116E870515C44B090090D303 /* Supporting Files */,
+				8C288A8F19F5A76D0002B1CD /* DictationSwitcherXPC.c */,
+				8C288A9019F5A76D0002B1CD /* DictationSwitcherXPC.h */,
 			);
 			path = DictationSwitcher;
 			sourceTree = "<group>";
@@ -208,10 +267,10 @@
 		116E870515C44B090090D303 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				116E870615C44B090090D303 /* DictationSwitcher-Info.plist */,
+				116E870615C44B090090D303 /* Dictation Language Switcher-Info.plist */,
 				116E870715C44B090090D303 /* InfoPlist.strings */,
 				116E870A15C44B090090D303 /* main.m */,
-				116E870C15C44B090090D303 /* DictationSwitcher-Prefix.pch */,
+				116E870C15C44B090090D303 /* Dictation Language Switcher-Prefix.pch */,
 				116E870D15C44B090090D303 /* Credits.rtf */,
 			);
 			name = "Supporting Files";
@@ -288,25 +347,66 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
+		8C288A7D19F5A5C10002B1CD /* DictationLanguageRefresher */ = {
+			isa = PBXGroup;
+			children = (
+				8C288A9219F5AFE20002B1CD /* DictationLanguageRefresher.entitlements */,
+				8C288A8019F5A5C10002B1CD /* DictationLanguageRefresherProtocol.h */,
+				8C288A8119F5A5C10002B1CD /* DictationLanguageRefresher.h */,
+				8C288A8219F5A5C10002B1CD /* DictationLanguageRefresher.m */,
+				8C288A8419F5A5C10002B1CD /* main.m */,
+				8C288A7E19F5A5C10002B1CD /* Supporting Files */,
+			);
+			path = DictationLanguageRefresher;
+			sourceTree = "<group>";
+		};
+		8C288A7E19F5A5C10002B1CD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8C288A7F19F5A5C10002B1CD /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		116E86F915C44B090090D303 /* DictationSwitcher */ = {
+		116E86F915C44B090090D303 /* Dictation Language Switcher */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 116E871815C44B090090D303 /* Build configuration list for PBXNativeTarget "DictationSwitcher" */;
+			buildConfigurationList = 116E871815C44B090090D303 /* Build configuration list for PBXNativeTarget "Dictation Language Switcher" */;
 			buildPhases = (
 				116E86F615C44B090090D303 /* Sources */,
 				116E86F715C44B090090D303 /* Frameworks */,
 				116E86F815C44B090090D303 /* Resources */,
+				8C288A8E19F5A5C10002B1CD /* Embed XPC Services */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8C288A8719F5A5C10002B1CD /* PBXTargetDependency */,
+				8C288A8A19F5A5C10002B1CD /* PBXTargetDependency */,
+			);
+			name = "Dictation Language Switcher";
+			productName = DictationSwitcher;
+			productReference = 116E86FA15C44B090090D303 /* Dictation Language Switcher.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8C288A7B19F5A5C10002B1CD /* DictationLanguageRefresher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C288A8B19F5A5C10002B1CD /* Build configuration list for PBXNativeTarget "DictationLanguageRefresher" */;
+			buildPhases = (
+				8C288A7819F5A5C10002B1CD /* Sources */,
+				8C288A7919F5A5C10002B1CD /* Frameworks */,
+				8C288A7A19F5A5C10002B1CD /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = DictationSwitcher;
-			productName = DictationSwitcher;
-			productReference = 116E86FA15C44B090090D303 /* DictationSwitcher.app */;
-			productType = "com.apple.product-type.application";
+			name = DictationLanguageRefresher;
+			productName = DictationLanguageRefresher;
+			productReference = 8C288A7C19F5A5C10002B1CD /* DictationLanguageRefresher.xpc */;
+			productType = "com.apple.product-type.xpc-service";
 		};
 /* End PBXNativeTarget section */
 
@@ -315,10 +415,32 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = DictationSwitcher;
-				LastUpgradeCheck = 0440;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "René Fouquet";
+				TargetAttributes = {
+					116E86F915C44B090090D303 = {
+						DevelopmentTeam = B325LM52BE;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.Mac = {
+								enabled = 1;
+							};
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+					8C288A7B19F5A5C10002B1CD = {
+						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = B325LM52BE;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.Mac = {
+								enabled = 1;
+							};
+						};
+					};
+				};
 			};
-			buildConfigurationList = 116E86F415C44B090090D303 /* Build configuration list for PBXProject "DictationSwitcher" */;
+			buildConfigurationList = 116E86F415C44B090090D303 /* Build configuration list for PBXProject "Dictation Language Switcher" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -330,7 +452,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				116E86F915C44B090090D303 /* DictationSwitcher */,
+				116E86F915C44B090090D303 /* Dictation Language Switcher */,
+				8C288A7B19F5A5C10002B1CD /* DictationLanguageRefresher */,
 			);
 		};
 /* End PBXProject section */
@@ -393,6 +516,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8C288A7A19F5A5C10002B1CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -410,7 +540,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8C288A7819F5A5C10002B1CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C288A9119F5A76D0002B1CD /* DictationSwitcherXPC.c in Sources */,
+				8C288A8519F5A5C10002B1CD /* main.m in Sources */,
+				8C288A8319F5A5C10002B1CD /* DictationLanguageRefresher.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8C288A8719F5A5C10002B1CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8C288A7B19F5A5C10002B1CD /* DictationLanguageRefresher */;
+			targetProxy = 8C288A8619F5A5C10002B1CD /* PBXContainerItemProxy */;
+		};
+		8C288A8A19F5A5C10002B1CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8C288A7B19F5A5C10002B1CD /* DictationLanguageRefresher */;
+			targetProxy = 8C288A8919F5A5C10002B1CD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		116E870715C44B090090D303 /* InfoPlist.strings */ = {
@@ -444,7 +597,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -472,7 +624,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -493,12 +644,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_ENTITLEMENTS = "Dictation Language Switcher.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DictationSwitcher/DictationSwitcher-Prefix.pch";
-				INFOPLIST_FILE = "DictationSwitcher/DictationSwitcher-Info.plist";
+				GCC_PREFIX_HEADER = "DictationSwitcher/Dictation Language Switcher-Prefix.pch";
+				INFOPLIST_FILE = "DictationSwitcher/Dictation Language Switcher-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Dictation Language Switcher";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -507,20 +660,85 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_ENTITLEMENTS = "Dictation Language Switcher.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DictationSwitcher/DictationSwitcher-Prefix.pch";
-				INFOPLIST_FILE = "DictationSwitcher/DictationSwitcher-Info.plist";
+				GCC_PREFIX_HEADER = "DictationSwitcher/Dictation Language Switcher-Prefix.pch";
+				INFOPLIST_FILE = "DictationSwitcher/Dictation Language Switcher-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Dictation Language Switcher";
 				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		8C288A8C19F5A5C10002B1CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_ENTITLEMENTS = DictationLanguageRefresher/DictationLanguageRefresher.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = DictationLanguageRefresher/Info.plist;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		8C288A8D19F5A5C10002B1CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_ENTITLEMENTS = DictationLanguageRefresher/DictationLanguageRefresher.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = DictationLanguageRefresher/Info.plist;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		116E86F415C44B090090D303 /* Build configuration list for PBXProject "DictationSwitcher" */ = {
+		116E86F415C44B090090D303 /* Build configuration list for PBXProject "Dictation Language Switcher" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				116E871615C44B090090D303 /* Debug */,
@@ -529,7 +747,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		116E871815C44B090090D303 /* Build configuration list for PBXNativeTarget "DictationSwitcher" */ = {
+		116E871815C44B090090D303 /* Build configuration list for PBXNativeTarget "Dictation Language Switcher" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				116E871915C44B090090D303 /* Debug */,
@@ -537,6 +755,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		8C288A8B19F5A5C10002B1CD /* Build configuration list for PBXNativeTarget "DictationLanguageRefresher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C288A8C19F5A5C10002B1CD /* Debug */,
+				8C288A8D19F5A5C10002B1CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
